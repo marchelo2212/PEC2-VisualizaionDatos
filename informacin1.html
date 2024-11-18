@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Información | PEC2-Visualización de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Marcelo Sotaminga" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">PEC2-Visualización de datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="sankey_diagram.html" class="daddy">Sankey Diagram</a>
+   <ul class="other-section">
+      <li><a href="informacin.html" class="no-ch">Información</a></li>
+      <li><a href="visualizacin_1.html" class="no-ch">Visualización 1</a></li>
+      <li><a href="visualizacin_2.html" class="no-ch">Visualización 2</a></li>
+   </ul>
+   </li>
+   <li><a href="icon_chart.html" class="daddy">Icon Chart</a>
+   <ul class="other-section">
+      <li><a href="informacin0.html" class="no-ch">Información</a></li>
+      <li><a href="visualizacin_10.html" class="no-ch">Visualización 1</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="hexagon_binning.html" class="current-page-parent daddy">Hexagon Binning</a>
+   <ul>
+      <li id="active"><a href="informacin1.html" class="active no-ch">Información</a></li>
+      <li><a href="visualizacin_11.html" class="no-ch">Visualización 1</a></li>
+   </ul>
+   </li>
+   <li><a href="webgrafa.html" class="no-ch">Webgrafía</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="hexagon_binning.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="visualizacin_11.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Información</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id21">
+<div class="iDevice emphasis0" >
+<div id="ta21_148_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="https://datavizproject.com/wp-content/uploads/examples/Sk%C3%A6rmbillede-2016-01-28-kl.-11.00.52.png" alt="" width="400" height="1578" /></p>
+<p>Fuente: <a href="https://www.theinformationlab.co.uk/community/blog/hexbins-in-tableau/">https://www.theinformationlab.co.uk/community/blog/hexbins-in-tableau/</a> </p>
+<p>El Hexagon Binning es una técnica de visualización de datos que agrupa puntos dispersos en un gráfico en hexágonos de igual tamaño. Es especialmente útil para representar conjuntos de datos densos o dispersos en un espacio bidimensional, donde la superposición de puntos puede dificultar la interpretación.</p>
+<p>Los hexágonos se colorean o escalonan según la densidad o frecuencia de los puntos dentro de cada celda. Esto permite identificar áreas con mayor o menor concentración de datos.</p>
+<ul>
+<li>Autor: El concepto detrás de Hexagon Binning surge del análisis espacial y las aplicaciones cartográficas, donde las celdas hexagonales son preferidas sobre cuadrículas rectangulares por su eficiencia en el agrupamiento de datos y su mejor representación visual de patrones.</li>
+<li>Funcionamiento:
+<ul>
+<li>Datos de Entrada: Coordenadas en un plano (x, y).</li>
+<li>Atributos asociados a los puntos para agregación (e.g., conteo, promedio).</li>
+</ul>
+</li>
+<li>Proceso:
+<ul>
+<li>El espacio se divide en una red de hexágonos de tamaño uniforme.</li>
+<li>Cada punto de datos se asigna a un hexágono según su posición (x, y).</li>
+<li>Se calcula una métrica de interés para cada hexágono (e.g., densidad de puntos, promedio, suma).</li>
+</ul>
+</li>
+<li>Representación Visual:
+<ul>
+<li>Los hexágonos se colorean o escalan para reflejar la métrica calculada.</li>
+<li>Los colores o la intensidad visual ayudan a identificar patrones y áreas de interés.</li>
+</ul>
+</li>
+<li>Componentes:
+<ul>
+<li>Ejes: Representan las dimensiones del espacio bidimensional (latitud y longitud,  ingresos y gastos, etc.).</li>
+<li>Hexágonos: Agrupan puntos dentro de celdas hexagonales. Cada hexágono representa un subconjunto de datos.</li>
+<li>Escala de Color:
+<ul>
+<li>Puede indica la métrica calculada en cada hexágono (densidad, promedio)</li>
+<li>Categorías de los datos.</li>
+</ul>
+</li>
+<li>Leyenda:Explica la escala de color y las métricas representadas.</li>
+</ul>
+</li>
+<li>Ámbitos de aplicación:
+<ul>
+<li>Análisis Geoespacial: Identificar densidades de población, distribución de clientes o actividad comercial en mapas.</li>
+<li>Big Data: Representar grandes volúmenes de datos dispersos, como registros de sensores o puntos de eventos.</li>
+<li>Ecología: Mapear la distribución de especies en un área determinada.</li>
+<li>Análisis Social: Visualizar patrones de ingresos y gastos o concentraciones demográficas.</li>
+</ul>
+</li>
+<li>Ventajas del Hexagon Binning
+<ul>
+<li>Reduce la complejidad visual de gráficos de dispersión densos.</li>
+<li>Ofrece una representación intuitiva de la densidad de datos.</li>
+<li>Permite identificar patrones espaciales o correlaciones ocultas.</li>
+</ul>
+</li>
+<li>Limitaciones del Hexagon Binning<br />
+<ul>
+<li>El tamaño de los hexágonos afecta la interpretación:</li>
+<li>Hexágonos pequeños pueden hacer el gráfico más detallado pero difícil de interpretar.</li>
+<li>Hexágonos grandes pueden simplificar en exceso los patrones.</li>
+<li>Requiere datos bidimensionales (ejes x, y) para ser aplicado.</li>
+<li>Es menos efectivo cuando los datos tienen pocos puntos o están distribuidos uniformemente.</li>
+</ul>
+</li>
+</ul>
+<h2>Ejemplo</h2>
+<p>Una Oda a Kobe Bryan en dos gráficas, consiste en emplear hexagon binning para ubicar la eficiencia de la localización en los tiros a canasta. </p>
+<p><img src="https://fivethirtyeight.com/wp-content/uploads/2015/11/goldsberry-kobebyrant-1.png?resize=625,512" alt="" width="625" height="512" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="https://fivethirtyeight.com/wp-content/uploads/2015/11/goldsberry-kobebyrant-2.png?resize=627,512" alt="" width="627" height="512" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Fuente: <a href="https://fivethirtyeight.com/features/an-ode-to-kobe-bryant-in-two-charts/">https://fivethirtyeight.com/features/an-ode-to-kobe-bryant-in-two-charts/</a> </p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Reconocimiento 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="hexagon_binning.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="visualizacin_11.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
